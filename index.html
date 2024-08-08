@@ -6,34 +6,45 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required>
-  
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required><br>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="support">Query Type:</label><br><br>
-
-        <label for="query">Support Request</label>
-        <input type="radio" id="general" name="query" value="General Enquiry" checked>
-        <label for="general">General Enquiry</label>
-        <input type="radio" id="support" name="query" value="Support Request" checked><br><br>
-  
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-  
-        <input type="checkbox" id="consent" name="consent" required>
-        <label for="consent">I consent to being contacted by the team</label>
-  
-        <input type="submit" value="Submit">
-      </form>
+<body><br><br><br>
+  <div class="contenedor">
+    <h2>Contacto </h2>
+    <form class="formulario">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="campo">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+        </div>
+    </form>
+    <form>
+      <div class="camp">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
     </div>
-  </body>
+    <label for="Consulta">Consulta</label>
+    <div class="container">
+      <div class="checkbox-container">
+        <input type="radio" class="checkbox" name="queryType" id="generalEnquiry">
+        <label class="checkbox-label" for="generalEnquiry">Investigación general</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="radio" class="checkbox" name="queryType" id="supportRequest">
+        <label class="checkbox-label" for="supportRequest">Solicitud de soporte</label>
+      </div>
+    </div>
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+<div class="container">
+    <input type="checkbox" id="consent" name="consent">
+    <label for="consent">I consent to being contacted by the team.</label>
+</div><br><br>
+    <div>
+        <button class="boton" type="submit">Guardar contacto</button>
+    </div>
+    </form>
+</div>
+</body>
 </html>
